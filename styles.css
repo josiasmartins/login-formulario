@@ -13,7 +13,7 @@ body {
 
 /* body *: serve para todos os elementos que possui body */
 body * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 .main-login {
@@ -119,14 +119,17 @@ body * {
 @media only screen and (max-width: 950px) {
     .card-login {
         width: 85%;
-
+        padding: 0 16px;
     }
 }
 
 /* media-queria: serve para ajudar na responsividade do site */
 @media only screen and (max-width: 600px) {
+
    .main-login {
        flex-direction: column;
+       box-sizing: border-box;
+       padding: 0 16px;
    }
 
    .left-login > h1 {
