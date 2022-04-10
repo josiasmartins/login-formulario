@@ -1,7 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
 * {
     margin: 0;
     --color-blue-dark: #201b2c;
     --color-blue-green-ligth: #77ffc0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* body *: serve para todos os elementos que possui body */
+body * {
+    /* box-sizing: border-box; */
 }
 
 .main-login {
@@ -24,6 +36,10 @@
 
 .left-login > h1 {
     color: #77ffc0;
+}
+
+.left-login-image {
+    width: 35vw;
 }
 
 .right-login {
@@ -52,6 +68,7 @@
 }
 
 .textfield {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* align-items: posionamento vertical */
@@ -96,4 +113,44 @@
     background: #00ff88;
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #00ff8052; /* box-shadow: primeior: valor de x, segundo: valor de y, terceiro: o blur quarto: spred e quarto: color */
+}
+
+/* media-queria: serve para ajudar na responsividade do site */
+@media only screen and (max-width: 950px) {
+    .card-login {
+        width: 85%;
+        padding: 0 16px;
+    }
+}
+
+/* media-queria: serve para ajudar na responsividade do site */
+@media only screen and (max-width: 600px) {
+
+   .main-login {
+       flex-direction: column;
+       box-sizing: border-box;
+       padding: 0 16px;
+   }
+
+   .left-login > h1 {
+    display: none;
+   }
+
+   .left-login {
+       width: 100%;
+       height: auto;
+   }
+
+   .right-login {
+    width: 100%;
+    height: auto;
+   }
+
+   .left-login-image {
+       width: 50vw;
+   }
+
+   .card-login {
+       width: 90%;
+   }
 }
