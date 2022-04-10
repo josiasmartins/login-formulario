@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
 * {
     margin: 0;
     --color-blue-dark: #201b2c;
     --color-blue-green-ligth: #77ffc0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .main-login {
@@ -24,6 +31,10 @@
 
 .left-login > h1 {
     color: #77ffc0;
+}
+
+.left-login-image {
+    width: 35vw;
 }
 
 .right-login {
@@ -52,6 +63,7 @@
 }
 
 .textfield {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* align-items: posionamento vertical */
