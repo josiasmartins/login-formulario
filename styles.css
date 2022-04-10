@@ -11,6 +11,11 @@ body {
     font-family: 'Noto Sans', sans-serif;
 }
 
+/* body *: serve para todos os elementos que possui body */
+body * {
+    box-sizing: border-box;
+}
+
 .main-login {
     width: 100vw;
     height: 100vh;
@@ -108,4 +113,41 @@ body {
     background: #00ff88;
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #00ff8052; /* box-shadow: primeior: valor de x, segundo: valor de y, terceiro: o blur quarto: spred e quarto: color */
+}
+
+/* media-queria: serve para ajudar na responsividade do site */
+@media only screen and (max-width: 950px) {
+    .card-login {
+        width: 85%;
+
+    }
+}
+
+/* media-queria: serve para ajudar na responsividade do site */
+@media only screen and (max-width: 600px) {
+   .main-login {
+       flex-direction: column;
+   }
+
+   .left-login > h1 {
+    display: none;
+   }
+
+   .left-login {
+       width: 100%;
+       height: auto;
+   }
+
+   .right-login {
+    width: 100%;
+    height: auto;
+   }
+
+   .left-login-image {
+       width: 50vw;
+   }
+
+   .card-login {
+       width: 90%;
+   }
 }
